@@ -18,11 +18,7 @@ body {
   align-items: center;
   padding: 8px 20px; /* Reduced padding */
   position: fixed;
-  width: calc(100% - 16px);
-  background: linear-gradient(to right, rgb(146, 59, 114), purple);
-  border-radius: 20px;
-  margin-inline: 8px;
-  margin-top: 8px;
+  width: 100%;
 }
 
 .navbar .nav-container {
@@ -60,24 +56,35 @@ body {
 .logo-text {
   display: flex;
   align-items: center;
-  font-family: "Borel";
-  color: whitesmoke;
 }
-.logo-text .image-containor {
-  width: 85px;
-}
-
-.logo-text .faroha-text-containor {
-  margin-top: 10px;
-  margin-inline: 5px;
-}
-
 .cart-container {
   /* background-color: blueviolet; */
 }
 .cart-icon {
   font-size: 20px; /* Size of the cart icon */
   text-decoration: none;
+}
+
+.pic {
+  width: 20%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 1;
+}
+.pics {
+  align-items: center;
+  width: 25px;
+  height: 20px;
+  justify-content: center;
+  padding: 100;
+  display: flex;
+}
+
+.button {
+  border: 20;
+  background-color: pink;
+  color: white;
 }
 
 .new {
