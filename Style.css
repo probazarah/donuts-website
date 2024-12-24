@@ -4,11 +4,32 @@
   padding: 0;
   margin: 0;
 }
+/* linear-gradient(to right, rgb(146, 59, 114), purple); */
 
 body {
   font-family: "Poppins", serif;
   background-color: #f4f4f4;
   margin-top: 75px;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+.heading h1 {
+  color: rgb(146, 59, 114);
+  position: relative;
+}
+.heading h1::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, rgb(146, 59, 114), purple);
+  border-radius: 5px;
+  width: 100%;
+  height: 5px;
 }
 .navbar {
   background-color: rgb(216, 113, 170); /* Pink color */
@@ -64,7 +85,7 @@ body {
   display: flex;
   align-items: center;
   font-family: "Borel";
-  color: whitesmoke;
+  color: white;
 }
 .logo-text .image-container {
   width: 85px;
@@ -83,7 +104,7 @@ body {
 .new {
   height: 100vh;
   width: 100vw;
-  background-image: url("images/dd33.jpg");
+  background-image: url("images/donuts-dish.jpg");
   background-size: cover;
 }
 
@@ -107,7 +128,7 @@ body {
 
 .opinion-section .main-container .left .center {
   /* background-color: yellow; */
-  width: 80%;
+  width: 70%;
 }
 
 .opinion-section .main-container .left .center form {
@@ -147,4 +168,12 @@ body {
 .opinion-section .main-container .right {
   /* background-color: blue; */
   width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.opinion-section .main-container .right img {
+  /* background-color: red; */
+  width: 70%;
+  border-radius: 20px;
 }
