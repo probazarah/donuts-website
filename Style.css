@@ -8,6 +8,7 @@
 body {
   font-family: "Poppins", serif;
   background-color: #f4f4f4;
+  margin-top: 75px;
 }
 .navbar {
   background-color: rgb(216, 113, 170); /* Pink color */
@@ -18,6 +19,8 @@ body {
   align-items: center;
   padding: 8px 20px; /* Reduced padding */
   position: fixed;
+  top: 0;
+  left: 0;
   width: calc(100% - 16px);
   background: linear-gradient(to right, rgb(146, 59, 114), purple);
   border-radius: 20px;
@@ -63,18 +66,15 @@ body {
   font-family: "Borel";
   color: whitesmoke;
 }
-.logo-text .image-containor {
+.logo-text .image-container {
   width: 85px;
 }
 
-.logo-text .faroha-text-containor {
+.logo-text .faroha-text-container {
   margin-top: 10px;
   margin-inline: 5px;
 }
 
-.cart-container {
-  /* background-color: blueviolet; */
-}
 .cart-icon {
   font-size: 20px; /* Size of the cart icon */
   text-decoration: none;
