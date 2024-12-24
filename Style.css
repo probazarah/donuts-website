@@ -86,3 +86,65 @@ body {
   background-image: url("images/dd33.jpg");
   background-size: cover;
 }
+
+.opinion-section .main-container {
+  background: linear-gradient(to right, rgb(146, 59, 114), purple);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 80px;
+  color: white;
+}
+.opinion-section .main-container .left {
+  /* background-color: red; */
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opinion-section .main-container .left .center {
+  /* background-color: yellow; */
+  width: 80%;
+}
+
+.opinion-section .main-container .left .center form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.opinion-section .main-container .left .center .form-cell input,
+.opinion-section .main-container .left .center .form-cell textarea {
+  width: 100%;
+  padding: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.opinion-section .main-container .left .center form .bottom {
+  display: flex;
+  justify-content: end;
+}
+.opinion-section .main-container .left .center form .bottom button {
+  background-color: white; /* Matching the navbar color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.opinion-section .main-container .left .center form .bottom button:hover {
+  background: linear-gradient(to right, rgb(146, 59, 114), purple);
+  color: white;
+}
+
+.opinion-section .main-container .right {
+  /* background-color: blue; */
+  width: 50vw;
+}
