@@ -262,7 +262,8 @@ footer {
   display: grid;
   align-items: end;
   justify-content: end;
-  background-color: yellow;
+  background: linear-gradient(to right, rgb(146, 59, 114), purple);
+  /* color: white; */
 }
 footer .container {
   width: 100%;
@@ -280,8 +281,10 @@ footer .container .about-us h2 {
 
 footer .container .about-us p {
   color: black;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 10px;
+  text-align: justify;
 }
 footer .container .scl {
   display: grid;
@@ -296,7 +299,7 @@ footer .container .scl li a {
   display: inline-block;
   width: 36px;
   height: 36px;
-  background-color: black;
+  background: linear-gradient(to right, rgb(146, 59, 114), purple);
   display: grid;
   align-items: center;
   justify-content: center;
@@ -306,4 +309,125 @@ footer .container .scl li a {
 footer .container .scl li a i {
   color: white;
   font-size: 20px;
+}
+footer .container .scl li a i:hover {
+  /* background: white; */
+  transition: color 0.3s ease-in-out;
+}
+
+footer .container .working-hours ul {
+  list-style: none;
+  margin-top: 15px;
+}
+footer .container .working-hours ul li span {
+  font-style: italic;
+}
+footer .container .quick-links ul {
+  margin-top: 15px;
+  list-style: none;
+  /* color: white; */
+}
+footer .container .quick-links ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+footer .container .quick-links ul li a:hover {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+footer .container .contact-us ul {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* text-decoration: none; */
+}
+footer .container .contact-us ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .container .contact-us ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+footer .container .contact-us ul li a:hover {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+footer .container .contact-us ul li i {
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  padding: 5px;
+}
+/* .top-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: blue;
+  /* grid-template-rows: auto; */
+
+/* .top-footer .cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.cell i {
+  background-color: white;
+  color: brown;
+  border-radius: 50px;
+  padding: 15px 15px;
+  font-size: 20px;
+} */
+/* .states {
+  background-color: red;
+} */
+.states .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: blue; */
+  /* gap: 50px; */
+  padding-block: 10px;
+}
+.states .container .cell {
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.states .container .cell .left i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 25px;
+  border: 1px solid #ddd;
+  transition: 0.3s ease;
+}
+
+.states .container .cell .left i:hover {
+  background-color: white;
+  color: rgb(216, 113, 170);
+}
+.states .container .cell .right {
+  /* background-color: green; */
+}
+
+/* .states .container .cell .right {
+  max-width: 100%;
+} */
+
+.states .container .cell .right h2 {
+  font-size: 30px;
 }
