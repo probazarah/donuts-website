@@ -254,22 +254,23 @@ body {
 }
 
 footer {
-  position: relative;
-  width: 100%;
-  height: auto;
   padding: 50px 100px;
   background-color: white;
-  display: grid;
-  align-items: end;
-  justify-content: end;
   background: linear-gradient(to right, rgb(146, 59, 114), purple);
   /* color: white; */
 }
+
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 20px; */
+}
 footer .container {
   width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
 }
 
 footer .container .about-us h2 {
