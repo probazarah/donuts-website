@@ -182,11 +182,10 @@ body {
 .menu-section {
   padding-top: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(146, 59, 114, 0.588);
   flex-wrap: wrap;
-  gap: 10px;
-  margin-inline: 80px;
+  gap: 38px;
+  padding-inline: 80px;
   color: white;
 }
 
@@ -208,7 +207,9 @@ body {
   /* background-color: aqua; */
 }
 .menu-section .menu-card .top img {
-  width: 100%;
+  width: 200px;
+  height: 133px;
+  /* aspect-ratio: 1; */
   border-radius: 10px;
 }
 .menu-section .menu-card .bottom {
