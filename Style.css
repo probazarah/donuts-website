@@ -182,7 +182,7 @@ body {
 .menu-section {
   padding-top: 10px;
   display: flex;
-  background-color: rgba(146, 59, 114, 0.588);
+  /* background-color: rgba(146, 59, 114, 0.588); */
   flex-wrap: wrap;
   gap: 38px;
   padding-inline: 80px;
@@ -256,9 +256,9 @@ body {
 
 footer {
   padding: 50px 100px;
-  background-color: white;
-  background: linear-gradient(to right, rgb(146, 59, 114), purple);
-  /* color: white; */
+  /* background-color: aqua */
+  background: white;
+  color: black;
 }
 
 footer .top {
@@ -335,7 +335,7 @@ footer .container .quick-links ul li a {
   color: black;
 }
 footer .container .quick-links ul li a:hover {
-  color: white;
+  color: rgb(100, 34, 76);
   transition: color 0.3s ease-in-out;
 }
 
@@ -398,6 +398,8 @@ footer .container .contact-us ul li i {
   /* background-color: blue; */
   /* gap: 50px; */
   padding-block: 10px;
+  background: linear-gradient(to right, rgb(146, 59, 114), purple);
+  color: white;
 }
 .states .container .cell {
   /* background-color: yellow; */
@@ -432,4 +434,57 @@ footer .container .contact-us ul li i {
 
 .states .container .cell .right h2 {
   font-size: 30px;
+}
+
+.landing-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: whitesmoke;
+  color: black;
+  padding-inline: 80px;
+}
+.landing-section .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.landing-section .left h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-family: "borel", sans-serif;
+}
+.landing-section .left p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(154, 24, 115);
+}
+.landing-section .left .btn {
+  background-color: white;
+  color: rgb(146, 59, 114);
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  text-decoration: none;
+}
+.landing-section .left .btn:hover {
+  background-color: rgb(146, 59, 114);
+  color: white;
+}
+.landing-section .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-section .right img {
+  width: 80%;
+  border-radius: 20px;
 }
