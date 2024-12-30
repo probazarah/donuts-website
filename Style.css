@@ -102,13 +102,6 @@ body {
   text-decoration: none;
 }
 
-.new {
-  height: 100vh;
-  width: 100vw;
-  background-image: url("images/donuts-dish.jpg");
-  background-size: cover;
-}
-
 .opinion-section .main-container {
   background: linear-gradient(to right, rgb(146, 59, 114), purple);
   border-radius: 20px;
