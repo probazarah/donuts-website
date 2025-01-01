@@ -62,7 +62,10 @@ body {
   text-decoration: none;
   font-size: 14px; /* Smaller text size */
   position: relative;
-  /* background: forestgreen; */
+  /* background: forestgreen;
+  align-items: center;
+  justify-content: center;
+  display: flex; */
 }
 .navbar .nav-container .nav-link::after {
   position: absolute;
@@ -89,7 +92,7 @@ body {
   color: white;
 }
 .logo-text .image-container {
-  width: 85px;
+  width: 60px;
 }
 
 .logo-text .faroha-text-container {
@@ -180,6 +183,8 @@ body {
   gap: 38px;
   padding-inline: 80px;
   color: white;
+  /* background-color: red */
+  background-size: cover;
 }
 
 .menu-section .menu-card {
@@ -393,6 +398,7 @@ footer .container .contact-us ul li i {
   padding-block: 10px;
   background: linear-gradient(to right, rgb(146, 59, 114), purple);
   color: white;
+  /* padding-top: 80px; */
 }
 .states .container .cell {
   /* background-color: yellow; */
