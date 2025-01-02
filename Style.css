@@ -8,7 +8,7 @@
 
 body {
   font-family: "Poppins", serif;
-  background-color: #f4f4f4;
+  background: whitesmoke;
   margin-top: 75px;
 }
 
@@ -81,10 +81,7 @@ body {
 .nav-container .nav-link:hover:after {
   width: 100%;
 }
-/* .nav-link:hover {
-  background-color: #ddd;
-  color: black;
-} */
+
 .logo-text {
   display: flex;
   align-items: center;
@@ -366,28 +363,7 @@ footer .container .contact-us ul li i {
   background-color: black;
   padding: 5px;
 }
-/* .top-footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: blue;
-  /* grid-template-rows: auto; */
 
-/* .top-footer .cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.cell i {
-  background-color: white;
-  color: brown;
-  border-radius: 50px;
-  padding: 15px 15px;
-  font-size: 20px;
-} */
-/* .states {
-  background-color: red;
-} */
 .states .container {
   display: flex;
   justify-content: center;
@@ -426,10 +402,6 @@ footer .container .contact-us ul li i {
 .states .container .cell .right {
   /* background-color: green; */
 }
-
-/* .states .container .cell .right {
-  max-width: 100%;
-} */
 
 .states .container .cell .right h2 {
   font-size: 30px;
