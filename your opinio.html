@@ -16,6 +16,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
+
     <title>Faroha Donut-home</title>
   </head>
   <body>
@@ -73,14 +75,22 @@
                 ></textarea>
               </div>
               <div class="bottom">
-                <button>Submit</button>
+                <button type="submit" class="btn" onclick="openpopup()">
+                  Submit
+                </button>
+                <div class="popup" id="popup">
+                  <img src="./images/cheakmark-picture.jpg" alt="checkmark" />
+                  <h2>Thank you for opinion</h2>
+                  <p>Your opinion is very important to us</p>
+                  <button type="button" onclick="closepopup()">Ok</button>
+                </div>
               </div>
             </form>
           </div>
         </div>
-        <!-- <div class="right">
+        <div class="right">
           <img src="./images/shop-card-detail.jpg" alt="shop-card" />
-        </div> -->
+        </div>
       </div>
     </div>
   </body>
