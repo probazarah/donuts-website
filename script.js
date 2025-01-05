@@ -1,12 +1,19 @@
-let popup = document.getElementById("popup");
+let popupContainer = document.getElementById("popup-container");
 function openPopup() {
-  popup.classList.add("openpopup");
+  popupContainer.classList.add("openpopup");
 }
 function closePopup() {
-  popup.classList.remove("openpopup");
+  popupContainer.classList.remove("openpopup");
 }
 
 document.querySelector("form").addEventListener("submit", function (event) {
   event.preventDefault();
   openPopup();
 });
+
+document
+  .getElementById("close-btn")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    closePopup();
+  });

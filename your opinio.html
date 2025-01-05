@@ -78,11 +78,15 @@
                 <button type="submit" class="btn" onclick="openpopup()">
                   Submit
                 </button>
-                <div class="popup" id="popup">
-                  <img src="./images/cheakmark-picture.jpg" alt="checkmark" />
-                  <h2>Thank you for opinion</h2>
-                  <p>Your opinion is very important to us</p>
-                  <button type="button" onclick="closepopup()">Ok</button>
+                <div class="container" id="popup-container">
+                  <div class="popup">
+                    <img src="./images/cheakmark-picture.jpg" alt="checkmark" />
+                    <h2>Thank you for opinion</h2>
+                    <p>Your opinion is very important to us</p>
+                    <button type="button" onclick="closepopup()" id="close-btn">
+                      Ok
+                    </button>
+                  </div>
                 </div>
               </div>
             </form>

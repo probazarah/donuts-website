@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  user-select: none;
 }
 /* linear-gradient(to right, rgb(146, 59, 114), purple); */
 
@@ -10,7 +11,6 @@ body {
   font-family: "Poppins", serif;
   background-color: #f4f4f4;
   margin-top: 75px;
-  /* background-image: url(""); */
 }
 
 .heading {
@@ -34,13 +34,12 @@ body {
   height: 5px;
 }
 .navbar {
-  background-color: ;
   overflow: hidden;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 20px; /* Reduced padding */
+  padding: 8px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -56,27 +55,23 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  flex-grow: 1; /* Allows the container to take up all available space */
+  flex-grow: 1;
 }
 .navbar .nav-container .nav-link {
   color: white;
   text-decoration: none;
-  font-size: 14px; /* Smaller text size */
+  font-size: 14px;
   position: relative;
-  /* background: forestgreen;
-  align-items: center;
-  justify-content: center;
-  display: flex; */
 }
 .navbar .nav-container .nav-link::after {
   position: absolute;
-  bottom: -5px; /* Positioning the underline just below the link */
+  bottom: -5px;
   left: 0;
   content: " ";
-  background-color: white; /* Color of the underline */
-  width: 0%; /* Initial width of the underline */
-  height: 2px; /* Thickness of the underline */
-  transition: width 0.3s ease-in-out; /* Animation effect */
+  background-color: white;
+  width: 0%;
+  height: 2px;
+  transition: width 0.3s ease-in-out;
 }
 
 .nav-container .nav-link:hover:after {
@@ -99,12 +94,8 @@ body {
 }
 
 .cart-icon {
-  font-size: 20px; /* Size of the cart icon */
+  font-size: 20px;
   text-decoration: none;
-}
-
-.opinion-section {
-  /* background-image: url("./images/donuts-dish.jpg"); */
 }
 
 .opinion-section .main-container {
@@ -115,10 +106,8 @@ body {
   align-items: center;
   margin-inline: 80px;
   color: white;
-  margin-top: ;
 }
 .opinion-section .main-container .left {
-  /* background-color: red; */
   width: 50vw;
   height: 50vh;
   display: flex;
@@ -127,7 +116,6 @@ body {
 }
 
 .opinion-section .main-container .left .center {
-  /* background-color: yellow; */
   width: 70%;
 }
 
@@ -155,7 +143,7 @@ body {
   justify-content: end;
 }
 .opinion-section .main-container .left .center form .bottom button {
-  background-color: white; /* Matching the navbar color */
+  background-color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -170,14 +158,12 @@ body {
 }
 
 .opinion-section .main-container .right {
-  /* background-color: blue; */
   width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .opinion-section .main-container .right img {
-  /* background-color: red; */
   width: 70%;
   border-radius: 20px;
 }
@@ -185,12 +171,10 @@ body {
 .menu-section {
   padding-top: 10px;
   display: flex;
-  /* background-color: rgba(146, 59, 114, 0.588); */
   flex-wrap: wrap;
   gap: 38px;
   padding-inline: 80px;
   color: white;
-  /* background-color: red */
   background-size: cover;
 }
 
@@ -208,60 +192,51 @@ body {
   justify-content: center;
   align-items: center;
 }
-.menu-section .menu-card .top {
-  /* background-color: aqua; */
-}
+
 .menu-section .menu-card .top img {
   width: 200px;
   height: 133px;
-  /* aspect-ratio: 1; */
   border-radius: 10px;
 }
 .menu-section .menu-card .bottom {
-  /* background-color: yellow; */
   color: white;
-}
-.menu-section .menu-card .bottom .bottom-top {
-  /* background-color: tomato; */
 }
 
 .menu-section .menu-card .bottom .bottom-top p {
   font-size: 12px;
 }
 .menu-section .menu-card .bottom .bottom-bottom {
-  /* background-color: cyan; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .menu-section .menu-card .bottom .bottom-bottom .cart-button {
-  background-color: white; /* Button background color */
-  color: rgb(146, 59, 114); /* Text color */
-  border: none; /* Removing default border */
-  border-radius: 20px; /* Rounded corners */
-  padding: 10px 20px; /* Padding for better appearance */
-  font-size: 14px; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition */
+  background-color: white;
+  color: rgb(146, 59, 114);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .menu-section .menu-card .bottom .bottom-bottom .cart-button:hover {
-  background-color: rgb(146, 59, 114); /* Background color on hover */
-  color: white; /* Text color on hover */
+  background-color: rgb(146, 59, 114);
+  color: white;
 }
 .menu-section .menu-card .bottom .bottom-bottom p {
   background-color: linear-gradient(to right, rgb(146, 59, 114), purple);
-  border-radius: 50px; /* Making the shape more pill-like */
-  padding-inline: 10px; /* Adjusting padding for better appearance */
-  padding-block: 5px; /* Adding vertical padding for better appearance */
-  color: white; /* Adding text color for better contrast */
-  font-size: 14px; /* Adjusting font size for better readability */
-  text-align: center; /* Centering text */
+  border-radius: 50px;
+  padding-inline: 10px;
+  padding-block: 5px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
 }
 
 footer {
   padding: 50px 100px;
-  /* background-color: aqua */
   background: hsl(300, 45%, 78%);
   color: black;
 }
@@ -270,12 +245,10 @@ footer .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 20px; */
 }
 footer .container {
   width: 100%;
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
 }
 
@@ -318,7 +291,6 @@ footer .container .scl li a i {
   font-size: 20px;
 }
 footer .container .scl li a i:hover {
-  /* background: white; */
   transition: color 0.3s ease-in-out;
 }
 
@@ -332,7 +304,6 @@ footer .container .working-hours ul li span {
 footer .container .quick-links ul {
   margin-top: 15px;
   list-style: none;
-  /* color: white; */
 }
 footer .container .quick-links ul li a {
   text-decoration: none;
@@ -350,7 +321,6 @@ footer .container .contact-us ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* text-decoration: none; */
 }
 footer .container .contact-us ul li {
   display: flex;
@@ -379,15 +349,11 @@ footer .container .contact-us ul li i {
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
-  /* background-color: blue; */
-  /* gap: 50px; */
   padding-block: 10px;
   background: linear-gradient(to right, rgb(146, 59, 114), purple);
   color: white;
-  /* padding-top: 80px; */
 }
 .states .container .cell {
-  /* background-color: yellow; */
   display: flex;
   align-items: center;
   gap: 20px;
@@ -408,9 +374,6 @@ footer .container .contact-us ul li i {
 .states .container .cell .left i:hover {
   background-color: white;
   color: rgb(216, 113, 170);
-}
-.states .container .cell .right {
-  /* background-color: green; */
 }
 
 .states .container .cell .right h2 {
@@ -470,24 +433,30 @@ footer .container .contact-us ul li i {
   border-radius: 20px;
 }
 
+.bottom .container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #383838ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 999999;
+}
+
 .popup {
   width: 350px;
-  background: rgb(255, 255, 255);
+  background: rgb(224, 221, 221);
   border-radius: 6px;
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   padding: 0 30px 30px;
   color: black;
-  visibility: hidden;
-  transition: transform 0.4s, top 0.4s;
 }
-.openpopup {
+.bottom .openpopup {
   visibility: visible;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .popup img {
