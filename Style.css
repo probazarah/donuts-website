@@ -168,7 +168,7 @@ body {
   align-items: center;
 }
 .opinion-section .main-container .right img {
-  width: 70%;
+  width: 50%;
   border-radius: 20px;
 }
 
@@ -344,7 +344,7 @@ footer .container .contact-us ul li a:hover {
 footer .container .contact-us ul li i {
   color: white;
   border-radius: 50%;
-  background-color: black;
+  background-color: rgb(115, 5, 76);
   padding: 5px;
 }
 
